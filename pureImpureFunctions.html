@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure and Impure Functions | Blogs | Muskan Gupta</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">Muskan Gupta</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link " href="/">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/projects.html">Projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/blogs.html">Blogs</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="hero">
+        <h1 class="hero-heading"><span class="heading-inverted">Pure</span> and <span class="heading-inverted">Impure</span>Functions</h1>
+    </header>
+    <section class="section">
+        <div class="container container-center">
+            <h1>1. Pure functions</h1>
+            <p>Pure function is a function without any side effects. conside the code below to understand it in a more better way.</p>
+            <div>
+                <b>
+                    <p>function updateMyNames(newName)</p>
+                    <p>{</p>
+                    <p> const myNames = ["Muskan", "Sakshi"];</p>
+                    <p>myNames[myNames.length] = newName;</p>
+                    <p>return myNames;</p>
+                    <p>}</p>
+                    <p>console.log(updateMyNames("Neha"));</p>
+                </b>
+            </div>
+            <p>Output: ['Muskan', 'Sakshi', 'Neha']</p>
+            <p><b>Note:</b> In the code above updateMyNames() does not depend on any external code to accomplish it's duties. This makes ist a pure function</p>
+        </div>
+
+    </section>
+    <section class="section">
+        <div class="container container-center">
+            <h1>2. Impure functions</h1>
+            <p>Impure function is a function that contains one or more side effects.</p>
+            <div>
+                <b>
+                    <p>const myNames = ["Muskan", "Sakshi"];</p>
+                    <p>function updateMyName(newName)</p>
+                    <p>{</p>
+                    <p>const myNames = ["Muskan", "Sakshi"];</p>
+                    <p>myNames.push(newName);</p>
+                    <p>return myNames;</p>
+                    <p>}</p>
+                    <p>updateMyName("Neha");</p>
+                </b>
+            </div>
+            <p>Output: ['Muskan', 'Sakshi', 'Neha']</p>
+            <p><b>Note:</b> In the code above updateMyName() is an impure function because it contains code (myNames) that mutates an external state - which gives updateMyName() some side effects</p>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-header">social media presence</div>
+        <ul class="social-links list-non-bullet ">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/GMuskan/">Github</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">Twitter</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.linkedin.com/in/muskan-gupta-75482b166/">LinkedIn</a>
+            </li>
+        </ul>
+        
+    </footer>
+</body>
+</html>

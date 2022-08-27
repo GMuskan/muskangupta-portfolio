@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacktoberfest | Blogs | Muskan Gupta</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">Muskan Gupta</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link " href="/">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/projects.html">Projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/blogs.html">Blogs</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="hero">
+        <h1 class="hero-heading">What is <span class="heading-inverted">Function Currying</span> ?</h1>
+    </header>
+    <div class="container container-center">
+        <p>We simply wrap function inside a function, which means we are going to return a function from another function to obtain some kind of translation. The parent function takes the first provided argument and returns the function that takes the next argument and this keeps on repeating till the number of arguments ends. Hopefully, the function that receives the last argument returns the expected result.</p>
+        <p>There are 2 ways of currying a function.</p>
+        <p>1. Using bind()</p>
+        <div>
+            <b>
+                <p>let multiply = function(x, y){</p>
+                    <p>console.log(x*y);</p>
+                <p>}</p>
+                <p>let multiplybyTwo = multiply.bind(this, 2);</p>
+                <p>multiplyByTwo(5);</p>
+            </b>
+        </div>
+        <p>bind() method will return a copy of multiply method, replacing x by 2 as shown below:</p>
+        <div>
+            <b>
+                <p>let multiplyByTwo = function(y){</p>
+                    <p>let x = 2;</p>
+                    <p>console.log(x*y);</p>
+                <p>}</p>
+            </b>
+        </div>
+        <p>2. using function closure.</p>
+        <div>
+            <b>
+                <p>let multiplyFunction = function(x){</p>
+                    <p>return function(y){</p>
+                        <p>console.log("multiplication of" + x "and" + y + "is" + x*y);</p>
+                    <p>}</p>
+                <p>}</p>
+                <p>let multiplyByFour = multiplyFunction(4);</p>
+                <p>multiplyByFour(5);</p>
+            </b>
+        </div>
+        <p>Advantages of Currying:</p>
+        <div>
+            <ul>
+                <li>Currying will make your code easier to refactor.</li>
+                <li>Currying also creates a more declarative code base, e.g. it's easier to read the code and understand what it's doing</li>
+                <li>It helps to create a higher-order function.</li>   
+                <li><b>Currying provides a way for working with functions that take multiple arguments, and using them in frameworks where functions might take only one argument. </b></li>
+            </ul>
+        </div>
+        
+    </div>
+    <footer class="footer">
+        <div class="footer-header">social media presence</div>
+        <ul class="social-links list-non-bullet ">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/GMuskan/">Github</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">Twitter</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.linkedin.com/in/muskan-gupta-75482b166/">LinkedIn</a>
+            </li>
+        </ul>
+        
+    </footer>   
+    
+</body>
+</html>

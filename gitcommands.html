@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Commands | Blogs | Muskan Gupta</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">Muskan Gupta</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link " href="/">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/projects.html">Projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/blogs.html">Blogs</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="hero">
+        <img class="hero-img" src="images/git-image.svg" />
+        <h1 class="hero-heading">Top 9 Most Used <span class="heading-inverted">Git Commands</span> For Developers</h1>
+    </header>
+    <section class="section">
+        <div class="container container-center">
+            <h1>1. git config</h1>
+            <p>Before start using Git, it needs to be configured properly. This command allows us to specify the username and email address that will be used for our commits.</p>
+            <section class="section section ow">
+                <ul class="list-non-bullet">
+                    <li># sets up Git with your name</li>
+                    <br/>
+                    <li>git config --global user.name "{Full-Name}"</li>
+                    <br/>
+                    <li># sets up Git with your email</li>
+                    <br/>
+                    <li>git config --global user.email "{email-address}"</li>
+                </ul>
+            </section>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container container-center">
+            <h1>2. git clone</h1>
+            <p>The git clone command takes a url to the Git repository we want to clone. The path to the Git repository you want to clone is passed as an argument to the git clone command. git clone command produces a local working copy of a remote repository's source code. When we clone a repository, the code is downloaded to our machine automatically.</p>
+            <section class="section section ow">
+                <p>$ git clone https://github.com/{repo-url}</p>
+            </section>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container container-center">
+            <h1>3. git branch</h1>
+            <p>Add a new branch to an existing repository, list all existing branches, and delete a branch with git branch. This command is used to perform operations on a specified branch. Here is how we create a new branch locally:</p>
+            <section class="section section ow">
+                <p>$ git branch {branch-name}</p>
+            </section>
+            <p>Take a look at the branches and check out on which branch we are currently working:</p>
+            <section class="section section ow">
+                <p>$ git branch or $ git branch --list</p>
+            </section>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container container-center">
+            <h1>4. git checkout</h1>
+            <p>git checkout command is used to switch to an existing branch or to create and switch to a new one. The branch you want to switch to must be present in our local machine, and any modifications made to your current branch must be committed or stashed before switching.</p>
+            <section class="section section ow">
+                <p>$ git checkout {branch-name}</p>
+            </section>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container container-center">
+            <h1>5. git pull</h1>
+            <p>We can fetch and integrate the content of the remote repository into our local repository using this command. git pull pulls the most recent changes from the remote server into the local repository, ensuring you have the most up-to-date information from your coworkers.</p>
+            <section class="section section ow">
+                <p>$ git pull</p>
+            </section>
+        </div>
+    </section>
+   
+    <section class="section">
+        <div class="container container-center">
+            <h1>6. git add</h1>
+            <p>git add command is used to move files from the Working Directory to the Staging area. The git add command saves our changes in a file to the staging area, allowing you to compare your local version to the version of remote repository. We use git add command to add a file to the staging area before committing our new or changed file. To add specific files:</p>
+            <section class="section section ow">
+                <p>$ git add {file1} {file2} … {fileN}</p>
+            </section>
+            <p>To add all the files:</p>
+            <section class="section section ow">
+                <p>$ git add .</p>
+            </section>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container container-center">
+            <h1>7. git commit</h1>
+            <p>This command saves a log message along with the commit id of the changes made to the git repository. The modifications are saved in our local repository with git commit. We must include a brief description of the changes made every time you commit our code changes for better understanding.</p>
+            <section class="section section ow">
+                <p>$ git commit -m "{your commit message here}"{repo-url}</p>
+            </section>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container container-center">
+            <h1>8. git push</h1>
+            <p>This command pushes the contents of our local repository to the remote repository.</p>
+            <section class="section section ow">
+                <p>$ git push{repo-url}</p>
+            </section>
+        </div>
+    </section>
+    
+    
+    <section class="section">
+        <div class="container container-center">
+            <h1>9. git merge</h1>
+            <p>Using this command we can merge the new chages in the specified branch into the current branch. The command git merge joins your branch to the parent branch.If there are no conflicts, it will make a new commit automatically.</p>
+            <section class="section section ow">
+                <p>$ git merge {name-of-branch-to-merge-in}</p>
+            </section>
+        </div>
+    </section>
+    
+    
+    <footer class="footer">
+        <div class="footer-header">social media presence</div>
+        <ul class="social-links list-non-bullet ">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/GMuskan/">Github</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://twitter.com/Muskan0905">Twitter</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.linkedin.com/in/muskan-gupta-75482b166/">LinkedIn</a>
+            </li>
+        </ul>
+        
+    </footer>
+    </body>
+    

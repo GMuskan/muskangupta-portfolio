@@ -8,6 +8,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
+    padding: 0;
 }
 
 hr{
@@ -25,12 +26,16 @@ hr{
 }
 
 .container-center{
-    max-width: 600px;
+    max-width: 850px;
     margin: auto;
 
 }
 
 /* Links */
+
+i{
+    cursor: pointer;
+}
 
 .link{
     box-sizing: border-box;
@@ -68,7 +73,7 @@ hr{
     background-color: var(--primary-color);
     color: white;
     padding: 1rem;
-    border-bottom-left-radius: 1rem;
+    /* border-bottom-left-radius: 1rem; */
 }
 
 .navigation .nav-brand{
@@ -92,17 +97,25 @@ hr{
 
 /* header */
 .hero{
-    padding: 2rem;
+    padding: 1rem;
     padding-top: 4rem;
 }
-.hero .hero-img{
+/* .hero .hero-img{
     max-width: 350px;
     display: block;
     margin:auto;
+} */
+
+.hero  img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
 }
 
 .hero .hero-heading{
-    padding: 1rem;
+    padding: 0.5rem;
     color: var(--dark-gray);
     text-align: center ;
 }
@@ -117,7 +130,7 @@ hr{
 
 /* section */
 .section{
-    padding: 2rem;
+    padding: 0rem;
 
 }
 .section h1{
@@ -132,7 +145,7 @@ hr{
     padding: 2rem 1rem;
     text-align: center;
     color: white;
-    border-top-right-radius: 1rem;
+    /* border-top-right-radius: 1rem; */
     margin-top: 32px;
 }
 
@@ -153,6 +166,14 @@ hr{
 mark {
     background-color: var(--mark-color);
     color: black;
+ }
+
+ button{
+    background-color: white;
+    margin-bottom: 1rem;
+    margin-right: 0.2rem;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
  }
 
 
